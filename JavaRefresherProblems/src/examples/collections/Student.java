@@ -3,6 +3,8 @@ package examples.collections;
 public class Student {
 
 	String name;
+	String department;
+
 	public String getName() {
 		return name;
 	}
@@ -15,5 +17,4 @@ public class Student {
 	public void setDepartment(String department) {
 		this.department = department;
 	}
-	String department;
 }
