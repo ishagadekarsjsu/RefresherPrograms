@@ -78,22 +78,6 @@ public class ArrayDemo {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		/*
-		 * do { System.out .println(
-		 * "Choose an option : \n1. Display sorted array \n2. Find minimum and maximum number \n3. Exit"
-		 * ); option = Integer.parseInt(br.readLine());
-		 * 
-		 * switch (option) { case 1: arrayDemo.displaySortedArray(array); break;
-		 * 
-		 * case 2: arrayDemo.minMax(array); break;
-		 * 
-		 * case 3: return;
-		 * 
-		 * default: System.out.println("You chose an incorrect option."); break;
-		 * } } while (option == 1 || option == 2 || option == 3); } catch
-		 * (NumberFormatException e) { e.printStackTrace(); } catch (IOException
-		 * e) { e.printStackTrace(); }
-		 */
 	}
 
 }
