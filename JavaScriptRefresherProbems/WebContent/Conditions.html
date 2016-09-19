@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Course Selection</title>
+<script type="text/javascript" src = "Conditions.js"></script>
+</head>
+<body>
+
+<h1>Online Course Information</h1>
+
+<label id = "label1">Select Major: </label>	<select id = "department" onchange="populateCourses(document.getElementById('courses'))">
+				<option value = "Computer Engineering">Computer Engineering</option>
+				<option value = "Software Engineering">Software Engineering</option>
+			  </select>
+<br><br><br>			  
+<label id = "label2" style = "display:none">Select Course to get the information:</label> 
+<select id="courses" style = "display:none" onchange="showCourseInfo()">
+</select>
+<br><br><br>
+
+<label id = "label3" style = "display:none">Course Info:</label> <br>
+<p id = "para">
+
+</body>
+</html>

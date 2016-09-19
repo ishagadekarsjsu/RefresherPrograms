@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Antivirus Purchase</title>
+<script type="text/javascript" src="Events.js"></script>
+</head>
+<body>
+
+<h1>Antivirus Purchase</h1>
+
+<label>Choose custom features for your Antivirus product:</label><br><br>
+
+License Duration: 		<br><br>
+						<input type = "radio" id = "radio1" onclick="confirmDuration(this)"> 3 months free trial &nbsp;&nbsp;&nbsp;&nbsp; 
+						<input type = "radio" id = "radio2" onclick="confirmDuration(this)"> 1 year (Price: $20) &nbsp;&nbsp;&nbsp;&nbsp;
+						<input type = "radio" id = "radio3" onclick="confirmDuration(this)"> 3 years (Price: $50)
+						<br><br>
+Choose Operating System:	<select id = "selectOS" onmouseover="changeBackground(this)" onchange="selectOS(this)">
+							<option value="Windows">Windows</option>
+							<option value="Linux">Linux</option>
+							<option value="Mac">Mac</option>
+							</select>
+							<br><br>
+Choose Features: 			<br><br>
+							<input type="checkbox" name = "check" value="Safe Banking">Safe Banking<br>
+							<input type="checkbox" name = "check" value="Phishing Protection">Phishing Protection<br>
+							<input type="checkbox" name = "check" value="Browsing Protection">Browsing Protection<br>
+							<input type="checkbox" name = "check" value="Email Protection">Email Protection<br>
+							<input type="checkbox" name = "check" value="Browser Sandbox">Browser Sandbox<br><br>
+							<button onclick="selectedFeatures()">Choose Features</button>
+							<br><br><br>
+							<button onclick="confirmProduct()">Confirm Product</button>
+
+</body>
+</html>

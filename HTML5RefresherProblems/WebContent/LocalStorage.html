@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Local Storage Demo</title>
+<script type="text/javascript" src = "LocalStorage.js"></script>
+</head>
+<body>
+
+<h1>Local Storage Demo</h1>
+
+Enter your first and last name and click the buttons to store and retrieve values from local storage:<br><br>
+First Name: <input type = "text" id = "first">
+<br><br>
+Last Name: <input type = "text" id = "last">
+<br><br>
+<button id="store" onclick="storeLocalStorageContents()">Store in local storage</button> &nbsp;&nbsp;
+<button id="retrieve" onclick="showLocalStorageContents()">Retrieve from local storage</button> &nbsp;&nbsp;
+<button id="remove" onclick="removeLocalStorageContents()">Remove from local storage</button>
+
+<p id = "para"></p>
+
+</body>
+</html>

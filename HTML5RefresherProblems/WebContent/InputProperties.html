@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Training Enrollment</title>
+<script type="text/javascript" src="InputProperties.js"></script>
+</head>
+<body onload="calculateId()">
+
+	<h1>Enrollment for extra-curricular activities</h1>
+	<input type="image" src="download.png" alt="image" width="60"
+		height="60">
+	<br> Enrollment Id: &nbsp;&nbsp;
+	<input type="text" id="id" disabled="disabled">
+	<br>
+	<br>
+
+	<form>
+		Name: &nbsp;&nbsp; <input type="text" placeholder="Enter name"
+			name="firstname" autofocus maxlength="10"
+			onkeypress="calculatelength(this)" required> <br> <br>
+		Email: &nbsp;&nbsp; <input type="email" id="email"
+			placeholder="Enter email"
+			pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" /><br> <br>
+		Mobile number: &nbsp;&nbsp; <input type="text" placeholder="Enter mobile number" pattern="[0-9]{10}"
+			title="Enter 10 digit number" required> <br><br>
+		Activity: &nbsp;&nbsp; <input list="activities" placeholder="Select activity" required>
+		<datalist id="activities">
+			<option value="Zumba">
+			<option value="Swimming">
+			<option value="Football">
+			<option value="Aerobics">
+			<option value="Basketball">
+		</datalist><br><br>
+		Start date: <input type="date"> <br>
+		<br> <br> <input type="submit" value="Submit" onclick="submitData()"> 
+		<input type="reset">
+	</form>
+
+</body>
+</html>
